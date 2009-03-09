@@ -1,5 +1,5 @@
 Summary:	C++ wrappers for GooCanvas library
-Summary(pl.UTF-8):	Interfejsy C++ dla GooCanvas library
+Summary(pl.UTF-8):	Interfejsy C++ dla biblioteki GooCanvas
 Name:		goocanvasmm
 Version:	0.13.0
 Release:	1
@@ -81,7 +81,7 @@ install -d $RPM_BUILD_ROOT%{_docdir}/%{name}-apidocs-%{version}
 	DESTDIR=$RPM_BUILD_ROOT
 
 # build API documentation
-cd docs/reference/
+cd docs/reference
 doxygen
 cp html/* $RPM_BUILD_ROOT%{_docdir}/%{name}-apidocs-%{version}
 
