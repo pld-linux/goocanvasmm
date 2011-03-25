@@ -7,12 +7,13 @@ License:	LGPL v2
 Group:		X11/Libraries
 Source0:	http://ftp.gnome.org/pub/GNOME/sources/goocanvasmm/0.15/%{name}-%{version}.tar.bz2
 # Source0-md5:	cf462e8d2f36f4e02387eb094773b3e9
-BuildRequires:	autoconf
-BuildRequires:	automake
+BuildRequires:	autoconf >= 2.59
+BuildRequires:	automake >= 1.9
 BuildRequires:	doxygen
 BuildRequires:	glibmm-devel >= 2.14.2
-BuildRequires:	goocanvas-devel >= 0.13
-BuildRequires:	gtkmm-devel >= 2.12.0
+BuildRequires:	goocanvas-devel >= 0.15
+BuildRequires:	gtkmm-devel >= 2.22.0
+BuildRequires:	mm-common >= 0.7.2
 BuildRequires:	libtool
 BuildRequires:	pkgconfig
 Requires:	goocanvas >= 0.13
@@ -29,8 +30,8 @@ Summary:	Header files for goocanvasmm library
 Summary(pl.UTF-8):	Pliki nagłówkowe biblioteki goocanvasmm
 Group:		X11/Development/Libraries
 Requires:	%{name} = %{version}-%{release}
-Requires:	goocanvas-devel >= 0.13
-Requires:	gtkmm-devel >= 2.12.0
+Requires:	goocanvas-devel >= 0.15
+Requires:	gtkmm-devel >= 2.22.0
 
 %description devel
 Header files for goocanvasmm library.
